@@ -4,17 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
+  <div class="fade-layer" onclick="showMenu()"></div>
+  <nav class="menu">
+    <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+    </ul>
+</nav>
   <header>
-
-
+    <h1 class="funnel-display">
+      Learn Space 
+    </h1>
+    <div id="menubutton" onclick="showMenu()">
+      <h2 class="roboto-condensed">Meny</h2>
+    </div>
   </header>
-  <nav>
-
-
-  </nav>
+  
   <main>
     <article>
 
@@ -44,5 +58,6 @@
 
 
   </footer>
+  <script src="js/mainjs.js"></script>
 </body>
 </html>
