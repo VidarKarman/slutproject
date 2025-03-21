@@ -40,6 +40,7 @@ header{
     transition: left 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
+    
 }
 .show{
     left: 0;
@@ -71,16 +72,16 @@ header{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
-  h1{
+}
+h1{
     font-size: 3rem;
-  }
-  h2{
+}
+h2{
     font-size: 2rem;
-  }
-  /*länkar*/
-  a{
+}
+/*länkar*/
+a{
     text-decoration: none;
     color: white;
     font-size: 2rem;
-  }
+}
