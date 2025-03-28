@@ -4,7 +4,7 @@ body {
     margin: none;
     padding: none;
     border: none;
-    width: 100vw;
+    
 }
 
 /*header som finns på varje sida*/
@@ -43,8 +43,8 @@ header {
     box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
     z-index: 10;
     display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 45% 45%;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: 47.5% 47.5%;
     justify-items: center;
     justify-content: space-around;
     align-content: space-around;
@@ -82,7 +82,8 @@ nav a {
 }
 .centered {
     position: absolute;
-    top: 50%;
+    width: 100%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -90,7 +91,7 @@ nav a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+    border-radius: 5%;
 }
 
 /*text*/
