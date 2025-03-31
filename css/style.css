@@ -152,10 +152,29 @@ a {
     width: 100%;
     background-image: url("../img/shot-by-cerqueira-0o_GEzyargo-unsplash.jpg");
     background-size: cover;
+    background-position: center center;
     color: white;
     text-align: center;
 }
-.main1 article{}
+.section1{
+    display: grid;
+    height: 130vh;
+    
+    color: white;
+}
+.section1 article{
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+}
+.article11{
+    grid-area: ar1;
+}
+.article12{
+    grid-area: ar2;
+}
+.article13{
+    grid-area: ar3;
+}
 /*sida4*/
 .wrapper4 {
     display: grid;
@@ -190,7 +209,16 @@ a {
     .article4 {
         padding: 5%;
     }
-
+    .section1{
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "as"
+        "ar1"
+        "ar2"
+        "ar3"
+        ;
+        
+    }
 }
 
 @media screen and (min-width: 479px) {
@@ -208,5 +236,14 @@ a {
         grid-template-columns: 45% 45%;
         justify-content: space-around;
     }
-
+    .section1{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 25% 75%;
+        grid-template-areas: 
+        "as ar1"
+        "as ar2"
+        "as ar3"
+        ;
+        
+    }
 }
