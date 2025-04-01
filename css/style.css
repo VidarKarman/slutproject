@@ -1,6 +1,7 @@
 /*css för alla sidor*/
 body {
     background-color: black;
+    width: 100vw;
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -183,7 +184,7 @@ a {
 }
 
 .article4 {
-    width: 100%;
+    width: 95%;
     height: 110vh;
     display: grid;
     grid-template-rows: 55% 15% 30%;
@@ -191,7 +192,7 @@ a {
 
 .article4 img {
     height: 90%;
-    width: 100%;
+    width: 90%;
     object-fit: contain;
 }
 
