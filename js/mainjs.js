@@ -1,12 +1,12 @@
-//let minRubrik = document.querySelector(”h1”)
+document.getElementById("menubutton").addEventListener("click", showMenu);
 
-// Ändra h1’s css
-//minRubrik.classList.toggle(”show”) 
+let layer = document.querySelector(".fade-layer");
+layer.addEventListener("click", showMenu);
 
-function showMenu(){
-    let menu = document.querySelector("nav.menu")
-    menu.classList.toggle("show")
+function showMenu() {
+    let menu = document.querySelector("nav.menu");
+    menu.classList.toggle("show");
 
-    let layer = document.querySelector(".fade-layer")
-    layer.classList.toggle("visible")
+    let layer = document.querySelector(".fade-layer");
+    layer.classList.toggle("visible");
 }

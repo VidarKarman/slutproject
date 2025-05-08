@@ -10,13 +10,24 @@ body {
 
 /*header som finns på varje sida*/
 header {
-    /*position: fixed;*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
     height: 10vh;
     width: 100%;
+    
+}
+header a {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    color: white;
+    width: 15%;
+    height: 70%;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
     
 }
 
@@ -198,12 +209,16 @@ a {
 
 
 @media screen and (max-width: 479px) {
-
+    .desktopheader{
+        display: none;
+    }
     .menu {
         grid-template-columns: 100%;
         grid-template-rows: 23.75% 23.75% 23.75% 23.75%;
     }
-
+    #menubutton {
+        width: 25%;
+    }
     a {
         font-size: 2rem;
     }
@@ -223,12 +238,16 @@ a {
 }
 
 @media screen and (min-width: 479px) {
-
+    .mobileheader{
+        display: none;
+    }
     .menu {
         grid-template-columns: 47.5% 47.5%;
         grid-template-rows: 47.5% 47.5%;
     }
-
+    #menubutton {
+        width: 20%;
+    }
     a {
         font-size: 3rem;
     }
