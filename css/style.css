@@ -110,7 +110,6 @@ nav a {
     height: 100%;
     object-fit: cover;
     border-radius: 5%;
-    
 }
 
 /*footer som finns på varje sida*/
@@ -397,11 +396,6 @@ aside p{
     a {
         font-size: 3rem;
     }
-
-    /*.wrapper4 {
-        grid-template-columns: 45% 45%;
-        justify-content: space-around;
-    }*/
     .wrapper4 {
         display: grid;
         grid-template-columns: 1fr 1fr;
