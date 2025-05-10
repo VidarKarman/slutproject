@@ -364,7 +364,6 @@ aside p{
         padding-top: 5%;
         padding-bottom: 5%;
         grid-template-rows: 10% 55% 35%;
-        grid-template-columns: ;
         grid-template-areas: 
         "h2"
         "img"
