@@ -19,9 +19,9 @@ header {
 }
 header a {
     position: relative;
+    display: flex;
     text-align: center;
     align-items: center;
-    color: white;
     width: 15%;
     height: 70%;
     color: white;
@@ -88,7 +88,9 @@ header a {
 nav a {
     position: relative;
     text-align: center;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     color: white;
@@ -138,17 +140,17 @@ footer {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 48;
     
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 30;
     
 }
 
 p {
-    font-size: 1rem;
+    font-size: 18px;
     width: 90%;
 }
 
@@ -163,18 +165,7 @@ a {
 img{
     border-radius: 20px;
 }
-.article2{
-    overflow: hidden;
-    border-radius: 20px;
-}
-.article3{
-    overflow: hidden;
-    border-radius: 20px;
-}
-.article4{
-    overflow: hidden;
-    border-radius: 20px;
-}
+    
 /*index.html*/
 .main1{
     height: 100vh;
@@ -192,7 +183,8 @@ img{
     
 }
 aside{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-area: as;
     width: 100%;
     height: 100%;
@@ -237,10 +229,13 @@ aside p{
     grid-area: ar3;
 }
 /*sida2*/
-
+.section2{
+    color: white;
+}
 .article2{
     display: grid;
     align-items: center;
+    color: white;
 }
 .article2 p{
     grid-area: p;
@@ -250,7 +245,7 @@ aside p{
 }
 .article2 img{
     height: 100%;
-    width: 100%;
+    width: 60%;
     object-fit: contain;
     grid-area: img;   
 }
@@ -323,7 +318,7 @@ aside p{
     
     .section1{
         grid-template-rows: 1fr 1fr 1fr 2fr;
-        height: 200vh;
+        height: 220vh;
         width: 100%;
         justify-content: center;
         grid-template-areas: 
@@ -361,24 +356,22 @@ aside p{
         "img"
         "p";
     }
-    .section2{
-        display: grid;
-        height: 415vh;
-        grid-template-rows: 40vh 70vh 70vh 70vh 70vh 70vh;
-        grid-row-gap: 5vh;
-        padding-top: 2.5vh;
-        padding-bottom: 2.5vh;
-        color: white;
-    }
+    
     .article2{
         display: grid;
-        align-items: center;
-        height: 70vh;
+        height: 90vh;
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
         grid-template-rows: 10% 55% 35%;
+        grid-template-columns: ;
         grid-template-areas: 
         "h2"
         "img"
         "p";
+    }
+    .article2 img{
+        width: 60%;
     }
     .wrapper4 {
         display: grid;
@@ -474,8 +467,10 @@ aside p{
     }
     #introarticlep{
         width: 40%;
+        color: white;
     }
     #introarticleh2{
         width: 40%;
+        color: white;
     }
 }
